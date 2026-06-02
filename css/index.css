@@ -1,4 +1,127 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: #FDF8F0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #FDF8F0;
+}
+
+nav span {
+    font-size: 1.2rem;
+    color: #932E50;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #6E5E41;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+main section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 80vh;
+}
+
+
+main section>div:first-child {
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    background: #FDF8F0;
+}
+
+.badge {
+    display: inline-block;
+    background: #F3B651;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+    letter-spacing: 0.08em;
+    width: fit-content;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #1a1a1a;
+    line-height: 1.2;
+}
+
+h1 em {
+    color: #8b2252;
+    font-style: italic;
+}
+
+p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 340px;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: #3d5a2e;
+    color: #fff;
+    border: none;
+    padding: 0.85rem 1.8rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #3d5a2e;
+    border: 1.5px solid #3d5a2e;
+    padding: 0.85rem 1.8rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+/* Columna derecha */
+main section>div:last-child {
+    background: #d4a017;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 3rem;
+    align-items: center;
+    justify-items: center;
+}
+
+main section>div:last-child img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
 }
