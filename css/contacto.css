@@ -1,4 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #FDF5EA;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 0.5px solid var(--border);
+}
+.head {
+    background-color: #FDF5EA;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nombre {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-right: 10rem;
+}
+.logo {
+  position: fixed;
+  top: 3px;   /* más pequeño = más arriba */
+  right: 16px;
+  width: 90px;
+  height: auto;
+  z-index: 1000;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 20rem;
+    padding-left: 1rem;
+}
+
+
+.item {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-mid);
+    transition: color 0.2s;
+}
+
+
+
+.container {
+    margin-top: 80px;
+}
+
+.fila-1 {
+    display: flex;
+}
+
+.fila-2 {
+    display: flex;
+    
+}
+
+.beige {
+    width: 50%;
+    padding: 3rem;
+    min-height: 900px;
+    background-color: #FDF8F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.morado {
+    width: 50%;
+    padding: 3rem;
+    min-height: 900px;
+    background-color: #932E50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.amarillo {
+    width: 54%;
+    padding: px;
+    min-height: 900px;
+    background-color: #F3B651;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.beige-2 {
+    width: 49%;
+    padding: 3rem;
+    min-height: 100px;
+    background-color: #FDF8F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.etiqueta {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 2rem auto;
+    border: 1px solid #932E50;
+    padding: 4px 14px;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.descripcion {
+    font-size: 2rem;
+    line-height: 1.7;
+    font-style: italic;
+    justify-content: center;
+    text-align: center;
+}
+
+.beige {
+    width: 50%;
+    padding: 3rem;
+    min-height: 900px;
+    background-color: #FDF8F0;
+}
+
+.morado {
+    width: 50%;
+    padding: 3rem;
+    min-height: 900px;
+    background-color: #932E50;
+    color: white;
+}
+
+.morado .etiqueta {
+    border-color: white;
+    color: white;
 }
