@@ -1,4 +1,122 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f2e9;
+    font-family: Arial, sans-serif;
+    color: #1f1f1f;
+}
+
+.coleccion{
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.subtitulo{
+    color: #c58b1f;
+    font-size: 15px;
+}
+
+h1{
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+h1 span{
+    color: #5f8d3b;
+}
+
+.Productos{
+    display: grid;
+    grid-template-columns: repeat(2, 260px);
+    gap: 75px 120px;
+    margin-top: 40px;
+}
+
+.card{
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 260px;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    display: block;
+}
+
+.informacion{
+    padding: 10px 12px 18px;
+    position: relative;
+    min-height: 110px;
+}
+
+.categoria-Shampoo,
+.categoria-acondicionador,
+.categoria-mascarilla,
+.categoria-kit{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.categoria-Shampoo{
+    color: #dda300;
+}
+
+.categoria-acondicionador{
+    color: #d56c45;
+}
+
+.categoria-mascarilla{
+    color: #8b2e35;
+}
+
+.categoria-kit{
+    color: #405c18;
+}
+
+h2{
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin-bottom: 6px;
+    font-weight: normal;
+}
+
+.informacion p{
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.precio{
+    background-color: #2e4807;
+    color: white;
+    padding: 3px 12px;
+    border-radius: 15px;
+    font-size: 15px;
+    position: absolute;
+    right: 14px;
+    bottom: 6px;
+}
+
+@media (max-width: 768px) {
+    .Productos{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .coleccion{
+        width: 90%;
+    }
 }
