@@ -26,7 +26,7 @@ header {
 }
 
 .nombre {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -41,23 +41,25 @@ header {
   z-index: 1000;
 }
 
-.list {
+.list  {
     list-style: none;
     display: flex;
     gap: 20rem;
     padding-left: 1rem;
-}
-
-
-.item {
-    text-decoration: none;
-    font-size: 12px;
+    color:#000;
+    font-size: 15px;
     font-weight: 400;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--ink-mid);
+}
+
+.list a {
+    text-decoration: none;
+    color: #000;
     transition: color 0.2s;
 }
+
+
 
 
 
@@ -166,4 +168,82 @@ header {
 .morado .etiqueta {
     border-color: white;
     color: white;
+}
+
+
+.footer {
+    margin-top: auto;
+    background: #222;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    background-color: #FDF5EA;
+}
+
+.footer p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    background-color: #FDF5EA;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    background: #333;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+.social-icons a:nth-child(1):hover {
+    background: #1877F2;
+}
+
+.social-icons a:nth-child(2):hover {
+    background: #E4405F;
+}
+
+.social-icons a:nth-child(3):hover {
+    background: #000;
+}
+
+.social-icons a:nth-child(4):hover {
+    background: #0A66C2;
+}
+
+.social-icons a:nth-child(5):hover {
+    background: #FF0000;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
 }
