@@ -24,7 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+const contactForm = document.getElementById("contactForm");
 
+if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        sendMail();
+    });
+}
 function sendMail() {
 
     let params = {
