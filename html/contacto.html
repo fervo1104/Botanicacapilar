@@ -1,7 +1,12 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Botánica Capilar | Catálogo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="catalogo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Botanica capilar</title>
@@ -14,50 +19,89 @@
         });
     </script>
 </head>
-
 <body>
-    <header>
-    <div class="head">
-    <h1 class="nombre">Botanica Capilar</h1>
-    <img class="logo" src="../imagenes/Image-removebg-preview.png" alt="Logo de Botanica Capilar">
-    <nav>
-        <ul class="list">
-            <li class="item"><a href="../index.html">Inicio</a></li>
-            <li class="item"><a href="../html/catalogo.html">Catalogo</a></li>
-            <li class="item"><a href="../html/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</div>
+
+<header>
+  <div class="head">
+    <h1 class="nombre">Botánica Capilar</h1>
+    <img class="logo-img" src="../imagenes/logo.jpg" alt="Logo de Botánica Capilar">
+  </div>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav id="navMenu">
+    <ul class="list">
+      <li class="item"><a href="../index.html">Inicio</a></li>
+      <li class="item"><a href="catalogo.html">Catálogo</a></li>
+      <li class="item"><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
 </header>
-    <div class="container">
-        <div class="fila-1">
-            <div class="beige">
-                <span class="etiqueta">Nuestra Mision</span>
-                <br><br><br><br>
-                <h2 class="titulo">Despertar de la naturaleza en tu piel</h2>
-                <br>
-                <p class="descripcion">Crear productos capilares naturales como shampoo, acondicionador y mascarillas elaborados con ingredientes de origen natural y biodegradables, los cuales buscan ayudar a tener un cabello saludable sin dañar el medio ambiente, con desechos de envases plásticos y residuos químicos producidos por este productos de cabellos ordinarios tipo.</p>
-            </div>
-            <div class="morado">
-                <span class="etiqueta">Nuestra Vision</span>
-                <br><br><br><br>
-                <h2 class="titulo">Despertar el poder de la naturaleza en tu piel</h2>
-                <br>
-                <p class="descripcion">Ser una marca líder en el mercado del cuidado capilar y la sostenibilidad ambiental, reconocida por ofrecer productos naturales, libres de químicos contaminantes y plásticos, promoviendo el bienestar del cabello y el cuidado del medio ambiente con alternativas ecológicas, innovadoras y responsables.</p>
-            </div>
-        </div>
-        <div class="fila-2">
-            <div class="amarillo">
-                <img class="imagen" src="../imagenes/Image-removebg-preview.png" alt="Imagen de producto amarillo">
-            </div>
-            <div class="beige-2">
-                <span class="etiqueta">Como nacio</span>
-                <br><br><br><br>
-                <h2 class="titulo">Una cocina, tres amigas y una gran idea</h2>
-                <p class="descripcion">Todo empezo con una conversación de como los productos para cabello que se usan comunmente tienen muchos químicos que a futuro probocan efectos secundarios dañinos para el pelo. Por lo que nos propusimos crear un producto que cumpla con la función de los productos comúnmente usados, pero con materiales naturales que no tienen efectos secundarios y aparte no afecten al ambiente.</p>
-            </div>
-        </div>
+
+<div class="overlay" id="overlay"></div>
+
+<section class="hero" id="catalogo">
+  <div class="eyebrow">NUESTRA COLECCIÓN</div>
+  <h1>Productos que <span class="accent">transforman</span></h1>
+</section>
+
+<section class="catalog">
+
+  <article class="card" data-cat="shampoo">
+    <div class="card-photo">
+      <img src="../imagenes/shampoo.jpg" alt="Shampoo en barra Aurora Dorada" class="product-img">
     </div>
+    <div class="card-body">
+      <div class="card-tag">Shampoo en barra</div>
+      <h3 class="card-title">Aurora Dorada</h3>
+      <p class="card-desc">Shampoo fortalecedor, hidratante, de limpieza profunda. Con ingredientes para un cabello saludable.</p>
+      <div class="card-footer"><span class="price">5.900₡</span></div>
+    </div>
+  </article>
+
+  <article class="card" data-cat="acondicionador">
+    <div class="card-photo">
+      <img src="../imagenes/acondicionador.jpg" alt="Acondicionador en barra Néctar Botánico" class="product-img">
+    </div>
+    <div class="card-body">
+      <div class="card-tag">Acondicionador en barra</div>
+      <h3 class="card-title">Néctar Botánico</h3>
+      <p class="card-desc">Acondicionador ligero con aloe vera y extractos botánicos. Desenreda fácilmente, hidrata y aporta brillo.</p>
+      <div class="card-footer"><span class="price">5.900₡</span></div>
+    </div>
+  </article>
+
+  <article class="card" data-cat="mascarilla">
+    <div class="card-photo">
+      <img src="../imagenes/mascarilla.jpg" alt="Mascarilla en barra Nutrición Hibisco" class="product-img">
+    </div>
+    <div class="card-body">
+      <div class="card-tag">Mascarilla en barra</div>
+      <h3 class="card-title">Nutrición Hibisco</h3>
+      <p class="card-desc">Mascarilla nutritiva de karité y aceite de coco. Repara el cabello seco y aporta suavidad.</p>
+      <div class="card-footer"><span class="price">5.900₡</span></div>
+    </div>
+  </article>
+
+  <article class="card" data-cat="paquete">
+    <div class="card-photo">
+      <img src="../imagenes/kit.jpg" alt="Kit Ritual Botánico con los tres productos" class="product-img">
+    </div>
+    <div class="card-body">
+      <div class="card-tag">Paquete Botánica Capilar</div>
+      <h3 class="card-title">Ritual Botánico</h3>
+      <p class="card-desc">Kit de nuestros tres productos. Ideal para una limpieza, hidratación y protección de tu cabello.</p>
+      <div class="card-footer"><span class="price">15.100₡</span></div>
+    </div>
+  </article>
+
+</section>
+
+<footer>© 2026 Botánica Capilar — Catálogo de productos</footer>
+
+<script src="script.js"></script>
 
     <section class="formulario-section">
         <div class="formulario-card">
@@ -94,7 +138,9 @@
     </section>
 
     <script src="../js/script.js"></script>
+
 </body>
+<<<<<<< HEAD
     <footer class="footer">
             <p>&copy; 2026 Mi Empresa. Todos los derechos reservados.</p>
 
@@ -118,4 +164,3 @@
             </div>
         </footer>
 </html>
-
