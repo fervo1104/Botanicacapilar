@@ -170,6 +170,116 @@ header {
     color: white;
 }
 
+.formulario-section {
+    background-color: #FDF8F0;
+    padding: 4rem 2rem 5rem;
+}
+
+.formulario-card {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #E6D7C1;
+    border-radius: 24px;
+    box-shadow: 0 12px 35px rgba(147, 46, 80, 0.12);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+}
+
+.formulario-info {
+    background: linear-gradient(135deg, #932E50 0%, #7a2540 100%);
+    color: #fff;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario-info .etiqueta {
+    border-color: #fff;
+    color: #fff;
+    margin: 0 0 1.5rem 0;
+}
+
+.formulario-info .titulo {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.formulario-info .descripcion {
+    font-size: 1.1rem;
+    text-align: left;
+    color: #fce7ee;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.formulario {
+    padding: 3rem;
+    display: grid;
+    gap: 1rem;
+    background-color: #FDF8F0;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.campo label {
+    font-weight: 700;
+    color: #932E50;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.campo input,
+.campo textarea {
+    border: 1px solid #d8c6b1;
+    border-radius: 12px;
+    padding: 0.9rem 1rem;
+    font: inherit;
+    background: #fffdf9;
+    color: #2f2f2f;
+}
+
+.campo textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.formulario button {
+    border: none;
+    background: #F3B651;
+    color: #2b1b0f;
+    padding: 0.95rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: fit-content;
+}
+
+.formulario button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(243, 182, 81, 0.25);
+}
+
+@media (max-width: 800px) {
+    .formulario-card {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario-info,
+    .formulario {
+        padding: 2rem;
+    }
+}
 
 .footer {
     margin-top: auto;
