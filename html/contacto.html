@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Botanica capilar</title>
     <link rel="stylesheet" href="../css/contacto.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+ 
+    <script>
+        emailjs.init({
+            publicKey: "XEr5qLni-u10PR5HU"
+        });
+    </script>
 </head>
 
 <body>
@@ -60,7 +67,7 @@
                 <p class="descripcion">¿Tienes preguntas sobre nuestros productos o quieres hacer un pedido? Completa el formulario y te responderemos pronto.</p>
             </div>
 
-            <form class="formulario">
+            <form class="formulario" id="contactForm">
                 <div class="campo">
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" placeholder="Tu nombre">
@@ -85,6 +92,8 @@
             </form>
         </div>
     </section>
+
+    <script src="../js/script.js"></script>
 </body>
  <footer class="footer">
         <p>&copy; 2026 Mi Empresa. Todos los derechos reservados.</p>
