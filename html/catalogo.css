@@ -29,21 +29,23 @@ a{text-decoration:none; color:inherit;}
 
 /* ---------- HEADER ---------- */
 header{
-  background:var(--header-bg);
+  background:#ffffff;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:18px 5vw;
+  padding:22px 5vw;
   flex-wrap:wrap;
   gap:12px;
+  border-bottom:1px solid #eee;
 }
 
-.logo{
+.nombre{
   font-family:'Playfair Display', serif;
-  font-weight:600;
-  font-style:italic;
-  font-size:1.5rem;
-  color:var(--terracotta);
+  font-weight:700;
+  letter-spacing:0.05em;
+  font-size:1.3rem;
+  color:var(--ink);
+  text-transform:uppercase;
 }
 
 nav{
@@ -51,11 +53,20 @@ nav{
   gap:2.4rem;
 }
 
+/* la lista de enlaces del menú */
+.list{
+  display:flex;
+  gap:2.6rem;
+  list-style:none;
+}
+
 nav a{
   font-family:'Playfair Display', serif;
-  letter-spacing:0.08em;
+  letter-spacing:0.05em;
   font-size:0.85rem;
-  color:#3a3730;
+  font-weight:600;
+  color:var(--ink);
+  text-transform:uppercase;
   position:relative;
   padding-bottom:4px;
   transition:color .25s ease;
@@ -71,23 +82,6 @@ nav a::after{
 }
 nav a:hover{color:var(--terracotta);}
 nav a:hover::after{width:100%;}
-
-.brand-badge{
-  width:64px; height:64px;
-  border-radius:50%;
-  background:#fffdf6;
-  border:1px solid #e6dcc2;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-shrink:0;
-  overflow:hidden;
-}
-.brand-badge-img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
 
 .nav-toggle{
   display:none;
@@ -255,11 +249,13 @@ nav a:hover::after{width:100%;}
     box-shadow:-4px 0 20px rgba(0,0,0,0.08);
   }
   nav.open{transform:translateX(0);}
+  .list{
+    flex-direction:column;
+    gap:1.8rem;
+  }
   nav a{font-size:1rem;}
   .nav-toggle{display:flex;}
-  .brand-badge{width:50px; height:50px;}
-  .brand-badge svg{width:28px; height:28px;}
-  .logo{font-size:1.25rem;}
+  .nombre{font-size:1.1rem;}
   .hero{padding:2.2rem 6vw 1rem;}
   .hero h1{font-size:1.7rem;}
   .card-photo{height:190px;}
