@@ -45,7 +45,7 @@ function sendMail() {
 
     emailjs.send(
         "valefervale",
-        "gzay89y",
+        "template_oxgov1l",
         params
     )
     .then(function (response) {
