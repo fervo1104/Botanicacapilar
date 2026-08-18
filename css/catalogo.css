@@ -53,6 +53,82 @@ nav{
   gap:2.4rem;
 }
 
+/* ==================================================
+   FOOTER
+================================================== */
+
+.footer {
+    background: #fdf5ea;
+
+    text-align: center;
+
+    padding: 2rem 5vw;
+
+    border-top: 1px solid #eee0d0;
+}
+
+
+.footer p {
+    margin-bottom: 1rem;
+
+    color: #625d55;
+
+    font-size: .85rem;
+}
+
+
+.social-icons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.social-icons a {
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    overflow: hidden;
+
+    transition: transform .25s ease,
+                box-shadow .25s ease;
+}
+
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 7px 15px rgba(0, 0, 0, .12);
+}
+
+
+.social-icons img {
+    width: 40px;
+
+    height: 40px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+
+
 /* la lista de enlaces del menú */
 .list{
   display:flex;

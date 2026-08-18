@@ -1,113 +1,304 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Botánica Capilar | Catálogo</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="catalogo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Botánica Capilar | Catálogo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&family=Caveat:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/catalogo.css">
 </head>
+
 <body>
 
-<header>
-  <h1 class="nombre">BOTÁNICA CAPILAR</h1>
+    <!-- ================= HEADER ================= -->
 
-  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
+    <header>
 
-  <nav id="navMenu">
-    <ul class="list">
-      <li class="item"><a href="../index.html">INICIO</a></li>
-      <li class="item"><a href="catalogo.html">CATALOGO</a></li>
-      <li class="item"><a href="contacto.html">CONTACTO</a></li>
-    </ul>
-  </nav>
-</header>
+        <h1 class="nombre">
+            BOTÁNICA CAPILAR
+        </h1>
 
-<div class="overlay" id="overlay"></div>
+        <button class="nav-toggle"
+                id="navToggle"
+                aria-label="Abrir menú"
+                aria-expanded="false">
 
-<section class="hero" id="catalogo">
-  <div class="eyebrow">NUESTRA COLECCIÓN</div>
-  <h1>Productos que <span class="accent">transforman</span></h1>
-</section>
+            <span></span>
+            <span></span>
+            <span></span>
 
-<section class="catalog">
+        </button>
 
-  <article class="card" data-cat="shampoo">
-    <div class="card-photo">
-      <img src="../imagenes/shampoo.jpg" alt="Shampoo en barra Aurora Dorada" class="product-img">
-    </div>
-    <div class="card-body">
-      <div class="card-tag">Shampoo en barra</div>
-      <h3 class="card-title">Aurora Dorada</h3>
-      <p class="card-desc">Shampoo fortalecedor, hidratante, de limpieza profunda. Con ingredientes para un cabello saludable.</p>
-      <div class="card-footer"><span class="price">5.900₡</span></div>
-    </div>
-  </article>
+        <nav id="navMenu">
 
-  <article class="card" data-cat="acondicionador">
-    <div class="card-photo">
-      <img src="../imagenes/acondicionador.jpg" alt="Acondicionador en barra Néctar Botánico" class="product-img">
-    </div>
-    <div class="card-body">
-      <div class="card-tag">Acondicionador en barra</div>
-      <h3 class="card-title">Néctar Botánico</h3>
-      <p class="card-desc">Acondicionador ligero con aloe vera y extractos botánicos. Desenreda fácilmente, hidrata y aporta brillo.</p>
-      <div class="card-footer"><span class="price">5.900₡</span></div>
-    </div>
-  </article>
+            <ul class="list">
 
-  <article class="card" data-cat="mascarilla">
-    <div class="card-photo">
-      <img src="../imagenes/mascarilla.jpg" alt="Mascarilla en barra Nutrición Hibisco" class="product-img">
-    </div>
-    <div class="card-body">
-      <div class="card-tag">Mascarilla en barra</div>
-      <h3 class="card-title">Nutrición Hibisco</h3>
-      <p class="card-desc">Mascarilla nutritiva de karité y aceite de coco. Repara el cabello seco y aporta suavidad.</p>
-      <div class="card-footer"><span class="price">5.900₡</span></div>
-    </div>
-  </article>
+                <!-- ESTÁN EN LA MISMA CARPETA html -->
 
-  <article class="card" data-cat="paquete">
-    <div class="card-photo">
-      <img src="../imagenes/kit.jpg" alt="Kit Ritual Botánico con los tres productos" class="product-img">
-    </div>
-    <div class="card-body">
-      <div class="card-tag">Paquete Botánica Capilar</div>
-      <h3 class="card-title">Ritual Botánico</h3>
-      <p class="card-desc">Kit de nuestros tres productos. Ideal para una limpieza, hidratación y protección de tu cabello.</p>
-      <div class="card-footer"><span class="price">15.100₡</span></div>
-    </div>
-  </article>
+                <li class="item">
+                    <a href="index.html">INICIO</a>
+                </li>
 
-</section>
+                <li class="item">
+                    <a href="catalogo.html">CATALOGO</a>
+                </li>
+
+                <li class="item">
+                    <a href="contacto.html">CONTACTO</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <div class="overlay" id="overlay"></div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="catalogo">
+
+        <div class="eyebrow">
+            NUESTRA COLECCIÓN
+        </div>
+
+        <h1>
+            Productos que
+            <span class="accent">transforman</span>
+        </h1>
+
+    </section>
+
+
+    <!-- ================= CATÁLOGO ================= -->
+
+    <section class="catalog">
+
+        <!-- SHAMPOO -->
+
+        <article class="card" data-cat="shampoo">
+
+            <div class="card-photo">
+
+                <img src="../imagenes/shampoo.jpg"
+                     alt="Shampoo en barra Aurora Dorada"
+                     class="product-img">
+
+            </div>
+
+            <div class="card-body">
+
+                <div class="card-tag">
+                    Shampoo en barra
+                </div>
+
+                <h3 class="card-title">
+                    Aurora Dorada
+                </h3>
+
+                <p class="card-desc">
+                    Shampoo fortalecedor, hidratante,
+                    de limpieza profunda. Con ingredientes
+                    para un cabello saludable.
+                </p>
+
+                <div class="card-footer">
+
+                    <span class="price">
+                        5.900₡
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ACONDICIONADOR -->
+
+        <article class="card" data-cat="acondicionador">
+
+            <div class="card-photo">
+
+                <img src="../imagenes/acondicionador.jpg"
+                     alt="Acondicionador en barra Néctar Botánico"
+                     class="product-img">
+
+            </div>
+
+            <div class="card-body">
+
+                <div class="card-tag">
+                    Acondicionador en barra
+                </div>
+
+                <h3 class="card-title">
+                    Néctar Botánico
+                </h3>
+
+                <p class="card-desc">
+                    Acondicionador ligero con aloe vera
+                    y extractos botánicos. Desenreda fácilmente,
+                    hidrata y aporta brillo.
+                </p>
+
+                <div class="card-footer">
+
+                    <span class="price">
+                        5.900₡
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- MASCARILLA -->
+
+        <article class="card" data-cat="mascarilla">
+
+            <div class="card-photo">
+
+                <img src="../imagenes/mascarilla.jpg"
+                     alt="Mascarilla en barra Nutrición Hibisco"
+                     class="product-img">
+
+            </div>
+
+            <div class="card-body">
+
+                <div class="card-tag">
+                    Mascarilla en barra
+                </div>
+
+                <h3 class="card-title">
+                    Nutrición Hibisco
+                </h3>
+
+                <p class="card-desc">
+                    Mascarilla nutritiva de karité y aceite
+                    de coco. Repara el cabello seco y aporta
+                    suavidad.
+                </p>
+
+                <div class="card-footer">
+
+                    <span class="price">
+                        5.900₡
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- KIT -->
+
+        <article class="card" data-cat="paquete">
+
+            <div class="card-photo">
+
+                <img src="../imagenes/kit.jpg"
+                     alt="Kit Ritual Botánico con los tres productos"
+                     class="product-img">
+
+            </div>
+
+            <div class="card-body">
+
+                <div class="card-tag">
+                    Paquete Botánica Capilar
+                </div>
+
+                <h3 class="card-title">
+                    Ritual Botánico
+                </h3>
+
+                <p class="card-desc">
+                    Kit de nuestros tres productos.
+                    Ideal para una limpieza, hidratación
+                    y protección de tu cabello.
+                </p>
+
+                <div class="card-footer">
+
+                    <span class="price">
+                        15.100₡
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
 
     <footer class="footer">
-            <p>&copy; 2026 Mi Empresa. Todos los derechos reservados.</p>
 
-            <div class="social-icons">
+        <p>
+            &copy; 2026 Botánica Capilar.
+            Todos los derechos reservados.
+        </p>
 
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                    <img src="../imagenes/insta.jpg" alt="Instagram">
-                </a>
+        <div class="social-icons">
 
-                <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
-                    <i class="fab fa-tiktok"></i>
-                    <img src="../imagenes/tik.jpg" alt="TikTok">
-                </a>
+            <a href="https://instagram.com"
+               target="_blank"
+               aria-label="Instagram">
 
-                <a href="mailto:correo@ejemplo.com" target="_blank" aria-label="Correo">
-                    <i class="fas fa-envelope"></i>
-                    <img src="../imagenes/correo.png" alt="Correo">
-                </a>
-                
-            </div>
-        </footer>
+                <img src="../imagenes/insta.jpg"
+                     alt="Instagram">
 
-<script src="script.js"></script>
+            </a>
+
+
+            <a href="https://tiktok.com"
+               target="_blank"
+               aria-label="TikTok">
+
+                <img src="../imagenes/tik.jpg"
+                     alt="TikTok">
+
+            </a>
+
+
+            <a href="mailto:correo@ejemplo.com"
+               aria-label="Correo">
+
+                <img src="../imagenes/correo.png"
+                     alt="Correo">
+
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+
 </body>
+
 </html>
