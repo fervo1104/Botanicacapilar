@@ -1,127 +1,165 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Jost:wght@300;400;500&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Georgia', serif;
+    font-family: 'Jost', sans-serif;
     background: #FDF8F0;
 }
 
+/* ── NAV ── */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 0.9rem 2.5rem;
     background: #FDF8F0;
 }
 
-nav span {
-    font-size: 1.2rem;
+.nav-logo {
+    font-family: 'Playfair Display', serif;
     color: #932E50;
-    font-weight: bold;
+    font-size: 1.1rem;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
 nav ul {
     display: flex;
+    flex-direction: row;
+    /* ← crítico, evita que se apilen */
+    gap: 2.5rem;
     list-style: none;
-    gap: 2rem;
 }
 
 nav ul a {
     text-decoration: none;
-    color: #6E5E41;
-    font-size: 0.85rem;
-    letter-spacing: 0.1em;
+    color: #787167;
+    font-size: 0.75rem;
+    letter-spacing: 0.13em;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
-main section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 80vh;
+.nav-logo-img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Si no tienes imagen, ocúltalo: */
+    /* display: none; */
 }
 
+/* ── HERO ── */
+.hero {
+    display: grid;
+    grid-template-columns: 45fr 55fr;
+    height: calc(100vh - 72px);
+    overflow: hidden;
+}
 
-main section>div:first-child {
-    padding: 4rem 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.5rem;
-    background: #FDF8F0;
+/* Columna izquierda */
+.hero-left {
+  justify-content: flex-start;
+  padding: 5rem 3rem 0 3.5rem;
 }
 
 .badge {
     display: inline-block;
     background: #F3B651;
-    color: #fff;
-    font-size: 0.75rem;
-    padding: 0.5rem 1.2rem;
+    color: #6E5E41;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 0.55rem 1.3rem;
     border-radius: 999px;
-    letter-spacing: 0.08em;
     width: fit-content;
 }
 
 h1 {
-    font-size: 2.8rem;
-    color: #1a1a1a;
-    line-height: 1.2;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.9rem;
+    line-height: 1.15;
+    color: #2a1f10;
+    font-weight: 700;
 }
 
 h1 em {
-    color: #8b2252;
     font-style: italic;
+    color: #932E50;
+    font-weight: 400;
 }
 
-p {
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.6;
-    max-width: 340px;
+.hero-desc {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.88rem;
+    color: #787167;
+    line-height: 1.85;
+    font-weight: 300;
 }
 
-.buttons {
+.btn-row {
     display: flex;
+    flex-direction: row;
+    /* ← evita que se apilen */
     gap: 1rem;
-    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 0.4rem;
 }
 
 .btn-primary {
-    background: #3d5a2e;
-    color: #fff;
+    background: #5B6D3D;
+    color: #FDF8F0;
     border: none;
-    padding: 0.85rem 1.8rem;
+    padding: 0.9rem 1.6rem;
     border-radius: 999px;
-    font-size: 0.95rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
     cursor: pointer;
+    text-align: center;
+    line-height: 1.4;
 }
 
 .btn-secondary {
     background: transparent;
-    color: #3d5a2e;
-    border: 1.5px solid #3d5a2e;
-    padding: 0.85rem 1.8rem;
+    color: #E0957F;
+    border: 1.5px solid #E0957F;
+    padding: 0.9rem 1.6rem;
     border-radius: 999px;
-    font-size: 0.95rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
     cursor: pointer;
+    text-align: center;
+    line-height: 1.4;
 }
 
 /* Columna derecha */
-main section>div:last-child {
-    background: #d4a017;
+.hero-right {
+    background: #F3B651;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    padding: 3rem;
+    grid-template-rows: 1fr 1fr;
+    gap: 2.5rem;
+    padding: 3rem 3rem;
     align-items: center;
     justify-items: center;
 }
 
-main section>div:last-child img {
+.hero-right img {
     width: 160px;
     height: 160px;
     border-radius: 50%;
+    /* ← hace el círculo */
     object-fit: cover;
+    display: block;
+    background: rgba(253, 248, 240, 0.3);
+    /* placeholder si no carga */
 }
